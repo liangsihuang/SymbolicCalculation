@@ -1,0 +1,10 @@
+clc;
+clear;
+x=sym('x');
+z=sym('z');
+% r=sym('r');
+r=sqrt(1/((1-x^2)^2+(2*z*x)^2));
+f=(1+x^2*(1-x^2)*r^2)^2+(2*z*x^3*r^2)^2;
+f1=simplify(f);
+% f2=expand(f);
+% f3=collect(f2);
