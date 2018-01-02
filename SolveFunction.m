@@ -5,7 +5,7 @@ b=sym('b');
 h=sym('h');
 l=sym('l');
 fy=sym('fy');
-b_num=20;
+b_num=50;
 h_num=200;
 l_num=1000;
 fy_num=235;
@@ -20,3 +20,5 @@ x=subs(x,{b,h,l,fy},{b_num,h_num,l_num,fy_num});
 x=double(x);
 y=subs(y,{b,h,l,fy},{b_num,h_num,l_num,fy_num});
 y=double(y);
+Mp=1/4*b_num*h_num^2*fy_num;
+M/Mp
